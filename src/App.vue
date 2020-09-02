@@ -3,12 +3,7 @@
     <div class="viewside">
       <TopNav class="topnav" @toggleSideNav="test" />
       <div id="view">
-        <SideNav
-          id="side-nav"
-          @toggleSideNav="test"
-          :class="{ test: isNavOpen }"
-        />
-        <!-- <button @click="test2()">ssdjfhjh</button> -->
+        <SideNav id="side-nav" @toggleSideNav="test" :class="{ test: isNavOpen }" />
         <transition name="fade-view" mode="out-in">
           <router-view id="router-view" />
         </transition>
@@ -23,32 +18,17 @@ import SideNav from "./components/SideNav";
 
 export default {
   data() {
-    return { isNavOpen: false };
+    return { isNavOpen: true };
   },
   components: {
     TopNav,
-    SideNav,
+    SideNav
   },
-  // computed() {
-  //   return { isNavOpen: this.$store.state.test.isNavOpen };
-  // },
   methods: {
-    test2() {
-      this.$store.commit("toggleSideNav", true);
-    },
     test() {
       this.isNavOpen = !this.isNavOpen;
-      // console.log(this.isNavOpen);
-    },
-  },
-  mounted() {
-    // console.log(this.isNavOpen);
-  },
-  // computed: {
-  //   isNavOpen: function() {
-  //     return { isNavOpen: this.$store.state.test.isNavOpen };
-  //   }
-  // }
+    }
+  }
 };
 </script>
 

@@ -6,9 +6,6 @@
         <router-link to="/">
           <i class="fa fa-pie-chart"></i>&nbsp;Dashboard
         </router-link>
-        <!-- <router-link to="/about">About</router-link> -->
-        <!-- <router-link to="/small-boxes">Small Boxes</router-link> -->
-        <!-- <router-link to="/large-boxes">Large Boxes</router-link> -->
         <router-link to="/chat-bot">
           <i class="fa fa-comments"></i>&nbsp;Chat Bot
         </router-link>
@@ -37,11 +34,6 @@ export default {
       this.$emit("toggleSideNav");
       document.querySelector(".hamburger").classList.remove("toggle");
     }
-  },
-  mounted() {
-    // function animation() {
-    //   document.querySelector(".hamburger").classList.remove("toggle");
-    // }
   }
 };
 </script>

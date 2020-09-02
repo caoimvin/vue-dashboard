@@ -50,7 +50,7 @@ export default {
   },
   mounted() {
     const hamburger = document.querySelector(".hamburger");
-    hamburger.classList.add("toggle");
+    // hamburger.classList.add("toggle");
     const dots = document.querySelector(".nav-seccond");
     // const navLinks = document.querySelector(".nav-links");
     const links = document.querySelectorAll(".nav-links li");
@@ -142,7 +142,7 @@ nav {
 /*Styling Buttons*/
 .login-button {
   background-color: transparent;
-  border: 1.5px solid #f2f5f7;
+  border: 1.5px solid #2c3e50;
   border-radius: 2em;
   padding: 0.6rem 0.8rem;
   margin-left: 2vw;
@@ -158,7 +158,7 @@ nav {
 .join-button {
   color: #131418;
   background-color: #f2f5f7;
-  border: 1.5px solid #f2f5f7;
+  border: 1.5px solid #2c3e50;
   border-radius: 2em;
   padding: 0.6rem 0.8rem;
   font-size: 1rem;
@@ -191,7 +191,7 @@ nav {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: #f2f5f7;
+  background: #cacacc;
   margin: 5px;
   transition: all 0.3s ease-out;
 }
@@ -241,9 +241,6 @@ nav {
   }
   .nav-links li {
     opacity: 0;
-  }
-  .nav-links .demo-link {
-    color: #f2f5f7;
   }
   .nav-links li:nth-child(1) {
     transition: all 0.5s ease 0.2s;

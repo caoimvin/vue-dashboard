@@ -43,7 +43,9 @@ export default {
       });
 
       this.$axios
-        .get(`http://127.0.0.1:5000/api/v1/chat-bot?input=${this.message}`)
+        .get(
+          `http://sofa.kevinmissback.com/api/v1/chat-bot?input=${this.message}`
+        )
         .then(res => {
           this.messages.push({
             text: res.data,
